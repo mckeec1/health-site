@@ -20,7 +20,7 @@
       ></v-app-bar-nav-icon>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" absolute top temporary app>
+    <v-navigation-drawer v-model="drawer" top temporary app>
       <v-list nav>
         <v-list-item v-for="link in menu" :key="link.num" link :to="link.link">
           <v-list-item-content>
@@ -50,11 +50,7 @@ export default {
       drawer: false,
     };
   },
-  methods: {
-    // menuItems() {
-    //   return this.menu;
-    // },
-  },
+  methods: {},
 };
 </script>
 <style>
