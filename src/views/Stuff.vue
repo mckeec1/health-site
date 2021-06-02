@@ -3,7 +3,10 @@
     <v-container fluid>
       <v-row>
         <v-col md="4" offset-md="1">
-          <v-img src="../assets/content1.jpg"></v-img>
+          <v-img
+            lazy-src="https://res.cloudinary.com/tofumarket/image/upload/c_thumb,w_200,g_face/v1622650471/Demo-HealthSite/content1.jpg"
+            src="../assets/content1.jpg"
+          ></v-img>
         </v-col>
         <v-col md="6">
           <v-card>
@@ -22,7 +25,10 @@
       </v-row>
       <v-row>
         <v-col md="4" class="hidden-md-and-up">
-          <v-img src="../assets/content2.jpg"></v-img>
+          <v-img
+            lazy-src="https://res.cloudinary.com/tofumarket/image/upload/c_thumb,w_200,g_face/v1622650472/Demo-HealthSite/content2.jpg"
+            src="../assets/content2.jpg"
+          ></v-img>
         </v-col>
         <v-col md="6" offset-md="1">
           <v-card>
@@ -47,12 +53,18 @@
           </v-card>
         </v-col>
         <v-col md="4" class="hidden-sm-and-down">
-          <v-img src="../assets/content2.jpg"></v-img>
+          <v-img
+            lazy-src="https://res.cloudinary.com/tofumarket/image/upload/c_thumb,w_200,g_face/v1622650472/Demo-HealthSite/content2.jpg"
+            src="../assets/content2.jpg"
+          ></v-img>
         </v-col>
       </v-row>
       <v-row>
         <v-col md="4" offset-md="1">
-          <v-img src="../assets/content3.jpg"></v-img>
+          <v-img
+            lazy-src="https://res.cloudinary.com/tofumarket/image/upload/v1622650471/Demo-HealthSite/content3.jpg"
+            src="../assets/content3.jpg"
+          ></v-img>
         </v-col>
         <v-col md="6">
           <v-card>

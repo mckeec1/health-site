@@ -18,7 +18,13 @@
         <br />
       </div>
       <v-row>
-        <v-col md="4" v-for="cards in cardObjWeights" v-bind:key="cards.number">
+        <v-col
+          cols="12"
+          sm="12"
+          md="4"
+          v-for="cards in cardObjWeights"
+          v-bind:key="cards.number"
+        >
           <v-card>
             <v-card-title>
               {{ cards.title }}
