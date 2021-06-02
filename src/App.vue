@@ -51,9 +51,9 @@ export default {
     };
   },
   methods: {
-    menuItems() {
-      return this.menu;
-    },
+    // menuItems() {
+    //   return this.menu;
+    // },
   },
 };
 </script>
