@@ -39,8 +39,6 @@ export default {
   props: {
     type: String,
   },
-  mounted() {
-    console.log(this.type);
-  },
+  mounted() {},
 };
 </script>

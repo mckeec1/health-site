@@ -6,7 +6,7 @@
 </template>
 <script>
 import Form from "../components/Form.vue";
-import Footer from "../components/Footer.vue";
+import Footer from "../components/FooterAbsolute.vue";
 
 export default {
   name: "SignUp",

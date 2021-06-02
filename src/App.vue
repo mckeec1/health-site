@@ -8,13 +8,30 @@
       </v-toolbar-title>
 
       <v-spacer></v-spacer>
-      <v-toolbar-items>
-        <v-btn depressed to="/">Home</v-btn>
-        <v-btn depressed to="/about">About</v-btn>
-        <v-btn depressed to="/sign-up">Sign Up</v-btn>
-        <v-btn depressed to="/contact">Contact Me!</v-btn>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn v-for="nav in menu" :key="nav.num" :to="nav.link" depressed>
+          {{ nav.title }}
+        </v-btn>
       </v-toolbar-items>
+
+      <v-app-bar-nav-icon
+        class="hidden-md-and-up"
+        @click="drawer = true"
+      ></v-app-bar-nav-icon>
     </v-app-bar>
+
+    <v-navigation-drawer v-model="drawer" absolute top temporary app>
+      <v-list nav>
+        <v-list-item v-for="link in menu" :key="link.num" link :to="link.link">
+          <v-list-item-content>
+            <v-list-item-title>
+              {{ link.title }}
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
     <v-main>
       <router-view />
     </v-main>
@@ -22,7 +39,22 @@
 </template>
 <script>
 export default {
-  data: () => ({}),
+  data() {
+    return {
+      menu: [
+        { title: "Home", link: "/", num: 1 },
+        { title: "About", link: "/about", num: 2 },
+        { title: "Sign Up", link: "/sign-up", num: 3 },
+        { title: "Contact Me!", link: "/contact", num: 4 },
+      ],
+      drawer: false,
+    };
+  },
+  methods: {
+    menuItems() {
+      return this.menu;
+    },
+  },
 };
 </script>
 <style>

@@ -6,7 +6,7 @@
           <v-parallax style="height: 81vh" src="../assets/background.jpg">
             <v-overlay absolute>
               <v-row no-gutters>
-                <v-col md="8" offset="2" class="text-center">
+                <v-col md="8" offset-md="2" class="text-center">
                   <div class="text-h2 black--text font-weight-bold">
                     At my health site we do
                   </div>
@@ -14,7 +14,7 @@
                 </v-col>
               </v-row>
               <v-row no-gutters>
-                <v-col md="8" offset="2">
+                <v-col md="8" offset-md="2">
                   <br />
                   <v-btn outlined color="green" to="/nutrition">
                     <v-icon> mdi-arrow-left-bold </v-icon>

@@ -2,7 +2,7 @@
   <div class="about" style="height: 100%">
     <v-container fluid>
       <v-row class="pt-10">
-        <v-col md="6" offset="3" style="background-color: white">
+        <v-col md="6" offset-md="3" style="background-color: white">
           <h1 class="pb-10">How We/I Started</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
@@ -42,15 +42,18 @@
         </v-col>
       </v-row>
     </v-container>
-    <Footer />
+    <Footer class="hidden-md-and-up" />
+    <FooterSticky class="hidden-sm-and-down" />
   </div>
 </template>
 <script>
 import Footer from "../components/Footer.vue";
+import FooterSticky from "../components/FooterAbsolute.vue";
 export default {
   name: "About",
   components: {
     Footer,
+    FooterSticky,
   },
 };
 </script>

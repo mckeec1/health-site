@@ -7,7 +7,7 @@
 
 <script>
 import Welcome from "../components/Welcome.vue";
-import Footer from "../components/Footer.vue";
+import Footer from "../components/FooterAbsolute.vue";
 export default {
   name: "Home",
 
